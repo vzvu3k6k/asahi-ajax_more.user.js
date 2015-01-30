@@ -33,7 +33,7 @@ $moreButton.addEventListener('click', function(event){
         }
 
         if(response.finalUrl === 'http://digital.asahi.com/notice/notice_ltov.html'){
-          $moreButton.textContent = '閲覧可能本数を超過しました';
+          fail('閲覧可能本数を超過しました');
           return;
         }
 
