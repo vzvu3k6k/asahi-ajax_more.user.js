@@ -17,6 +17,8 @@ $moreButton.addEventListener('click', function(event){
   if(disable) return;
   event.preventDefault();
 
+  $moreButton.textContent = '読み込み中';
+
   var fail = function(message){
     $moreButton.textContent = message;
     disable = true;
