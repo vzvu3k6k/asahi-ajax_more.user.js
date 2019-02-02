@@ -3,14 +3,14 @@
 // @description    朝日新聞の記事ページで「続きを読む」ボタンを押すとその場で全文を表示する
 // @version        1.1
 // @author         vzvu3k6k
-// @match          http://www.asahi.com/articles/*
-// @match          http://digital.asahi.com/articles/*
+// @match          https://www.asahi.com/articles/*
+// @match          https://digital.asahi.com/articles/*
 // @namespace      http://vzvu3k6k.tk/
 // @license        CC0
 // @grant          GM_xmlhttpRequest
 // ==/UserScript==
 
-var $moreButton = document.querySelector('.ReadMore a[href^="http://digital.asahi.com/articles/"]');
+var $moreButton = document.querySelector('.ReadMore a[href^="https://digital.asahi.com/articles/"]');
 var disable = false;
 
 $moreButton.addEventListener('click', function(event){
@@ -34,7 +34,7 @@ $moreButton.addEventListener('click', function(event){
           return;
         }
 
-        if(response.finalUrl === 'http://digital.asahi.com/notice/notice_ltov.html'){
+        if(response.finalUrl === 'https://digital.asahi.com/notice/notice_ltov.html'){
           fail('閲覧可能本数を超過しました');
           return;
         }
