@@ -7,7 +7,7 @@
 // @match          https://digital.asahi.com/articles/*
 // @namespace      http://vzvu3k6k.tk/
 // @license        CC0
-// @grant          GM_xmlhttpRequest
+// @grant          GM.xmlHttpRequest
 // ==/UserScript==
 
 var $moreButton = document.querySelector('.ReadMore a[href^="https://digital.asahi.com/articles/"]');
@@ -24,7 +24,7 @@ $moreButton.addEventListener('click', function(event){
     disable = true;
   };
 
-  GM_xmlhttpRequest({
+  GM.xmlHttpRequest({
     method: 'GET',
     url: $moreButton.href,
     onload: function(response){
