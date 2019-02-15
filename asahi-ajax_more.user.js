@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           asahi.com: Ajaxで「全文を読む」
 // @description    朝日新聞の記事ページで「全文を読む」ボタンを押すとその場で全文を表示する
-// @version        1.1
+// @version        1.2
 // @author         vzvu3k6k
 // @match          https://www.asahi.com/articles/*
 // @match          https://digital.asahi.com/articles/*
